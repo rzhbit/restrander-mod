@@ -1,3 +1,8 @@
+
+兼容 cruise-toolkit，序列名字不添加矫正方向的信息。
+
+---
+
 <p align="center">
     <img src="figures/logo.png" title="Restrander" alt="Restrander" width="300">
 </p>
