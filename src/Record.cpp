@@ -60,9 +60,9 @@ Record::printFq()
         this->identifier += " artefact=" + artefact::getName(this->artefact) + " ";
     }
 
-    // first, add on the strand tag
-    this->identifier += " strand=";
-    this->identifier.push_back(this->strand);
+    // // first, add on the strand tag
+    // this->identifier += " strand=";
+    // this->identifier.push_back(this->strand);
     
     // if it's a reverse read, we need to take the reverse of some things
     if (this->strand == '-') {
@@ -71,5 +71,5 @@ Record::printFq()
     }
     
     // then construct the formatted record
-    return this->identifier + "\n" + this->sequence + "\n+\n" + this->quality + "\n";
+    return this->identifier + "\n" + this->sequence + "\n+ strand=" + this->strand + "\n" + this->quality + "\n";
 }
